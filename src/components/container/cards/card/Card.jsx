@@ -1,31 +1,47 @@
 import React from "react";
-import PropTypes from "prop-types";
 
-const Card = (props) => {
+const Card = ({ card, handleAddToCart }) => {
+  const {
+    recipe_image,
+    recipe_name,
+    short_description,
+    preparing_time,
+    calories,
+    ingredients,
+  } = card;
   return (
     <div>
-      <div class="card w-96 bg-base-100 shadow-xl">
-        <figure class="px-10 pt-10">
+      <div className="card w-96 bg-base-100 shadow-xl">
+        <figure className="px-10 pt-10">
           <img
-            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-            alt="Shoes"
-            class="rounded-xl"
+            src={recipe_image}
+            alt="Recipe"
+            className="rounded-xl h-64 w-11/12"
           />
         </figure>
-        <div class="card-body items-start space-y-2">
-          <h2 class="card-title p-2">Chicken Caesar Salad</h2>
-          <p className="border-b-2 w-full">
-            Classic Italian pasta dish with savory meat sauce.
-          </p>
+        <div className="card-body items-start space-y-2">
+          <h2 className="card-title p-2">{recipe_name}</h2>
+          <p className="border-b-2 w-full">{short_description}</p>
           <div className="border-b-2 w-full">
-            <p>Ingredients: 6</p>
+            <p>Ingredients: {ingredients.map((items) => items.length)}</p>
             <div className="text-center">
               <li>500g ground beef 1 onion</li>
               <li>500g ground beef 1 onion</li>
               <li>500g ground beef 1 onion</li>
             </div>
           </div>
-          <button class=" bg-[#0BE58A] rounded-3xl text-xl font-medium px-4 py-2 text-black">
+          <div className="flex gap-10">
+            <div className="flex justify-center items-center gap-2">
+              <span>{preparing_time} minutes</span>
+            </div>
+            <div className="flex justify-center items-center gap-2">
+              <span>{calories} Calories</span>
+            </div>
+          </div>
+          <button
+            onClick={() => handleAddToCart(card)}
+            className=" bg-[#0BE58A] rounded-3xl text-lg font-medium px-4 py-2 text-black"
+          >
             Want to Cook
           </button>
         </div>
@@ -33,7 +49,5 @@ const Card = (props) => {
     </div>
   );
 };
-
-Card.propTypes = {};
 
 export default Card;

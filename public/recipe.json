@@ -1,0 +1,74 @@
+[
+  {
+    "recipe_id": "1",
+    "recipe_name": "Spaghetti Carbonara",
+    "short_description": "Classic Italian pasta dish with creamy sauce.",
+    "preparing_time": "30",
+    "calories": 450,
+    "recipe_image": "https://static01.nyt.com/images/2021/02/14/dining/carbonara-horizontal/carbonara-horizontal-square640-v2.jpg",
+    "ingredients": ["Spaghetti", "Eggs", "Bacon", "Parmesan Cheese", "Black Pepper", "Olive Oil"]
+  },
+  {
+    "recipe_id": "2",
+    "recipe_name": "Grilled Salmon with Asparagus",
+    "short_description": "Healthy and flavorful seafood dish.",
+    "preparing_time": "25",
+    "calories": 320,
+    "recipe_image": "https://s3.amazonaws.com/img.cookspiration.com/devices/266/2/Honey.Grilled.Salmon.and.Asparagus.ipad.jpg",
+    "ingredients": ["Salmon Fillet", "Asparagus", "Olive Oil", "Salt", "Black Pepper"]
+  },
+  {
+    "recipe_id": "3",
+    "recipe_name": "Chicken Stir-Fry",
+    "short_description": "Quick and easy Asian-inspired dish.",
+    "preparing_time": "20",
+    "calories": 380,
+    "recipe_image": "https://www.allrecipes.com/thmb/xvlRRhK5ldXuGcXad8XDM5tTAfE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/223382_chicken-stir-fry_Rita-1x1-1-b6b835ccfc714bb6a8391a7c47a06a84.jpg",
+    "ingredients": ["Chicken Breast", "Bell Peppers", "Broccoli", "Soy Sauce", "Garlic"]
+  },
+  {
+    "recipe_id": "4",
+    "recipe_name": "Caprese Salad",
+    "short_description": "Simple and refreshing Italian salad.",
+    "preparing_time": "15",
+    "calories": 250,
+    "recipe_image": "https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2019/07/Caprese-Salad-main-1.jpg",
+    "ingredients": ["Tomatoes", "Fresh Mozzarella", "Basil Leaves", "Balsamic Vinegar", "Extra Virgin Olive Oil", "Salt"]
+  },
+  {
+    "recipe_id": "5",
+    "recipe_name": "Vegetable Stir-Fry",
+    "short_description": "Healthy and colorful vegetarian dish.",
+    "preparing_time": "20",
+    "calories": 280,
+    "recipe_image": "https://www.budgetbytes.com/wp-content/uploads/2022/03/Easy-Vegetable-Stir-Fry-V1.jpg",
+    "ingredients": ["Mixed Vegetables", "Soy Sauce", "Garlic", "Ginger", "Sesame Oil"]
+  },
+  {
+    "recipe_id": "6",
+    "recipe_name": "Margarita Pizza",
+    "short_description": "Classic Italian pizza with tomato and basil.",
+    "preparing_time": "35",
+    "calories": 320,
+    "recipe_image": "https://www.onceuponachef.com/images/2020/06/Margherita-Pizza-scaled.jpg",
+    "ingredients": ["Pizza Dough", "Tomato Sauce", "Fresh Mozzarella", "Salt"]
+  },
+  {
+    "recipe_id": "7",
+    "recipe_name": "Beef Tacos",
+    "short_description": "Traditional Mexican street food with seasoned beef.",
+    "preparing_time": "30",
+    "calories": 400,
+    "recipe_image": "https://danosseasoning.com/wp-content/uploads/2022/03/Beef-Tacos-768x575.jpg",
+    "ingredients": ["Ground Beef", "Taco Shells", "Lettuce", "Tomatoes", "Cheddar Cheese", "Sour Cream", "Salsa"]
+  },
+  {
+    "recipe_id": "8",
+    "recipe_name": "Pasta Primavera",
+    "short_description": "Colorful pasta dish with mixed vegetables.",
+    "preparing_time": "25",
+    "calories": 350,
+    "recipe_image": "https://thecozycook.com/wp-content/uploads/2024/02/Pasta-Primavera-f.jpg",
+    "ingredients": ["Penne Pasta", "Assorted Vegetables", "Parmesan Cheese", "Garlic", "Olive Oil", "Fresh Basil"]
+  }
+]
