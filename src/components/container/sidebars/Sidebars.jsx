@@ -1,9 +1,7 @@
 import PropTypes from "prop-types";
 import PrepareToCook from "./cooking/PrepareToCook";
 import Cooking from "./cooking/Cooking";
-import { useState } from "react";
-const Sidebars = ({ carts, handleDelete }) => {
-  const [preparing_time, setPreparing_time] = useState(0);
+const Sidebars = ({ carts, handleDelete, prep_time, handleCooking }) => {
   return (
     <div className="py-6 border-2 border-[#28282833] rounded-xl">
       {/* upper sidebar */}
@@ -11,6 +9,21 @@ const Sidebars = ({ carts, handleDelete }) => {
         <h1 className="border-b-2 text-2xl font-semibold text-center">
           Want to cook: {carts.length}
         </h1>
+        <div className=" flex items-center gap-3 lg:gap-9 px-1 bg-fuchsia-100">
+          <div>
+            <p></p>
+          </div>
+          <div>
+            <p>Name</p>
+          </div>
+          <div>
+            <p>Time</p>
+          </div>
+          <div>
+            <p>Calories</p>
+          </div>
+          <div></div>
+        </div>
         <div className="flex justify-center items-center ">
           <div></div>
         </div>
@@ -22,11 +35,29 @@ const Sidebars = ({ carts, handleDelete }) => {
             handleDelete={handleDelete}
           ></PrepareToCook>
         ))}
+        <h1 className="border-b-2 text-2xl font-semibold text-center">
+          Currently cooking: 0
+        </h1>
+        <div className=" flex items-center gap-3 lg:gap-9 px-1 bg-fuchsia-100">
+          <div>
+            <p></p>
+          </div>
+          <div>
+            <p>Name</p>
+          </div>
+          <div>
+            <p>Time</p>
+          </div>
+          <div>
+            <p>Calories</p>
+          </div>
+          <div></div>
+        </div>
         <Cooking></Cooking>
       </div>
       <div className="flex justify-end gap-6 mr-2">
         <p>
-          Total Time = <br /> <span>30 min</span>
+          Total Time = <br /> <span>{prep_time} min</span>
         </p>
         <p>
           Total Calories = <br /> <span>600 Calories</span>
