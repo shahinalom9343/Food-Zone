@@ -1,12 +1,21 @@
 import PropTypes from "prop-types";
+import background from "../images/banner.png";
 const Banner = (props) => {
   return (
-    <div className="lg:px-32 mx-auto mt-2 lg:mt-7 mb-3 lg:mb-10 banner-image">
-      <div className="hero rounded-3xl">
+    <div className="lg:px-32 mx-auto mt-2 lg:mt-7 mb-3 lg:mb-10">
+      <div
+        className="hero rounded-3xl"
+        style={{
+          backgroundImage: `url(${background})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold">
+          <div className="max-w-lg flex flex-col justify-center items-center lg:py-28">
+            <h1 className="mb-5 text-3xl font-bold">
               Discover an exceptional cooking class tailored for you!
             </h1>
             <p className="mb-5">
