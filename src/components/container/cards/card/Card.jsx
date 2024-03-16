@@ -11,15 +11,15 @@ const Card = ({ card, handleAddToCart }) => {
   } = card;
   return (
     <div>
-      <div className="card w-96 bg-base-100 shadow-xl">
-        <figure className="px-10 pt-10">
+      <div className="card bg-base-100 shadow-xl border-2 border-[#28282833]">
+        <figure className="px-4 pt-4">
           <img
             src={recipe_image}
             alt="Recipe"
-            className="rounded-xl h-64 w-11/12"
+            className="rounded-xl h-48 w-11/12"
           />
         </figure>
-        <div className="card-body items-start space-y-2">
+        <div className="card-body items-start space-y-1">
           <h2 className="card-title p-2">{recipe_name}</h2>
           <p className="border-b-2 w-full">{short_description}</p>
           <div className="border-b-2 w-full">

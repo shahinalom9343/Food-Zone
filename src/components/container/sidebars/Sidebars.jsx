@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import PrepareToCook from "./cooking/PrepareToCook";
 
-const Sidebars = ({ carts }) => {
+const Sidebars = ({ carts, handleDelete }) => {
   return (
     <div className="py-6 border-2 border-[#28282833] rounded-xl mx-auto">
       {/* upper sidebar */}
@@ -12,8 +12,12 @@ const Sidebars = ({ carts }) => {
         <div className="flex justify-center items-center ">
           <div></div>
         </div>
-        {carts.map((singleCart) => (
-          <PrepareToCook singleCart={singleCart}></PrepareToCook>
+        {carts.map((singleCart, index) => (
+          <PrepareToCook
+            singleCart={singleCart}
+            index={index}
+            handleDelete={handleDelete}
+          ></PrepareToCook>
         ))}
       </div>
       {/* lower sidebar */}

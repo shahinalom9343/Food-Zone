@@ -10,7 +10,7 @@ const Cards = ({ handleAddToCart }) => {
       .then((data) => setCards(data));
   }, []);
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
       {cards.map((card) => (
         <Card
           key={card.recipe_id}
