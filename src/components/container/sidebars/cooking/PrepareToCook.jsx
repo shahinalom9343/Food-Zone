@@ -1,4 +1,10 @@
-const PrepareToCook = ({ singleCart, index, handleDelete }) => {
+const PrepareToCook = ({
+  singleCart,
+  index,
+  handleDelete,
+  handlePrepare,
+  handleCalories,
+}) => {
   const { recipe_name, preparing_time, calories, recipe_id } = singleCart;
   // console.log(singleCart);
   return (
@@ -17,7 +23,11 @@ const PrepareToCook = ({ singleCart, index, handleDelete }) => {
       </div>
       <div>
         <button
-          onClick={() => handleDelete(recipe_id)}
+          onClick={() => {
+            handleDelete(recipe_id);
+            handlePrepare(preparing_time);
+            handleCalories(calories);
+          }}
           className=" bg-[#0BE58A] rounded-3xl text-lg px-4 py-2 text-black my-5"
         >
           Preparing

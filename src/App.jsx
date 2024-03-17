@@ -10,6 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 function App() {
   const [carts, setCarts] = useState([]);
   const [preparationTime, setPreparationTime] = useState(0);
+  const [calories, setCalories] = useState(0);
   const handleAddToCart = (card) => {
     const isExist = carts.find((item) => item.recipe_id === card.recipe_id);
     if (isExist) {
@@ -20,11 +21,17 @@ function App() {
     }
   };
 
-  const handleDelete = (id, time) => {
+  const handleDelete = (id) => {
     const newCart = carts.filter((item) => item.recipe_id !== id);
     setCarts(newCart);
-    setPreparationTime(preparationTime + time);
-    console.log(preparationTime);
+  };
+  const handlePrepare = (time) => {
+    const newTime = preparationTime + parseInt(time);
+    setPreparationTime(newTime);
+  };
+  const handleCalories = (calory) => {
+    const updateCalories = calories + parseInt(calory);
+    setCalories(updateCalories);
   };
 
   return (
@@ -40,7 +47,10 @@ function App() {
           <Sidebars
             carts={carts}
             handleDelete={handleDelete}
+            handlePrepare={handlePrepare}
             preparationTime={preparationTime}
+            handleCalories={handleCalories}
+            calories={calories}
           ></Sidebars>
         </div>
       </div>

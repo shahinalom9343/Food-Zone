@@ -1,7 +1,14 @@
 import PropTypes from "prop-types";
 import PrepareToCook from "./cooking/PrepareToCook";
 import Cooking from "./cooking/Cooking";
-const Sidebars = ({ carts, handleDelete, prep_time, handleCooking }) => {
+const Sidebars = ({
+  carts,
+  handleDelete,
+  handlePrepare,
+  preparationTime,
+  handleCalories,
+  calories,
+}) => {
   return (
     <div className="py-6 border-2 border-[#28282833] rounded-xl">
       {/* upper sidebar */}
@@ -33,6 +40,8 @@ const Sidebars = ({ carts, handleDelete, prep_time, handleCooking }) => {
             singleCart={singleCart}
             index={index}
             handleDelete={handleDelete}
+            handlePrepare={handlePrepare}
+            handleCalories={handleCalories}
           ></PrepareToCook>
         ))}
         <h1 className="border-b-2 text-2xl font-semibold text-center">
@@ -57,10 +66,10 @@ const Sidebars = ({ carts, handleDelete, prep_time, handleCooking }) => {
       </div>
       <div className="flex justify-end gap-6 mr-2">
         <p>
-          Total Time = <br /> <span>{prep_time} min</span>
+          Total Time = <br /> <span>{preparationTime} min</span>
         </p>
         <p>
-          Total Calories = <br /> <span>600 Calories</span>
+          Total Calories = <br /> <span>{calories} Calories</span>
         </p>
       </div>
     </div>
