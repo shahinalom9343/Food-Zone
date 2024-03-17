@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <div className="px-1 lg:px-32 mx-auto mt-2 lg:mt-7">
+    <div className="px-1 lg:px-20 mx-auto mt-2 lg:mt-7">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
@@ -38,8 +38,8 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-sm lg:text-3xl font-medium lg:font-bold">
-            Recipe Calories
+          <a className="btn btn-ghost text-xl md:2xl lg:text-3xl font-medium lg:font-bold">
+            Healty Bite
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -60,7 +60,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end space-x-2">
           {/* search input */}
-          <label className="input input-bordered flex items-center gap-2 rounded-3xl bg-[#150B2B0D]">
+          <label className="input input-bordered sm:hidden md:flex lg:flex items-center gap-2 rounded-3xl bg-[#150B2B0D]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"

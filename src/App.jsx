@@ -39,11 +39,11 @@ function App() {
       <Navbar></Navbar>
       <Banner></Banner>
       <ContainerHeader></ContainerHeader>
-      <div className="lg:px-32 mx-auto mt-2 lg:mt-7 grid grid-cols-1 lg:grid-cols-9 gap-3">
-        <div className="col-span-5">
+      <div className="lg:px-32 mx-auto mt-2 lg:mt-7 grid grid-cols-1 md:grid-cols-5 lg:grid-cols-9 gap-3">
+        <div className=" md:col-span-2 lg:col-span-5">
           <Cards handleAddToCart={handleAddToCart}></Cards>
         </div>
-        <div className="col-span-4">
+        <div className="md:col-span-3 lg:col-span-4">
           <Sidebars
             carts={carts}
             handleDelete={handleDelete}

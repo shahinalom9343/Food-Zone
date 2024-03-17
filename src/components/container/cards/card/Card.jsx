@@ -18,7 +18,7 @@ const Card = ({ card, handleAddToCart }) => {
             className="rounded-xl h-48 w-5/6"
           />
         </figure>
-        <div className="card-body items-start space-y-1">
+        <div className="card-body items-start">
           <h2 className="card-title p-2">{recipe_name}</h2>
           <p className="border-b-2 w-full">{short_description}</p>
           <div className="border-b-2 w-full">
@@ -29,34 +29,23 @@ const Card = ({ card, handleAddToCart }) => {
               ))}
             </div>
           </div>
-          <div className="flex gap-10">
+          <div className="flex gap-5">
             <div className="flex justify-center items-center gap-2">
               <svg
-                width="1.000000"
-                height="6.000000"
-                viewBox="0 0 1 6"
-                fill="none"
+                width="30"
+                height="30"
                 xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
+                fillRule="evenodd"
+                clipRule="evenodd"
               >
-                <desc>Created with Pixso.</desc>
-                <defs />
-                <path
-                  id="Vector"
-                  d="M0 0L0 "
-                  stroke="#282828"
-                  strokeOpacity="0.800000"
-                  strokeWidth="1.500000"
-                  strokeLinejoin="round"
-                  strokeLinecap="round"
-                />
+                <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 11h6v1h-7v-9h1v8z" />
               </svg>
               <span>{preparing_time} minutes</span>
             </div>
             <div className="flex justify-center items-center gap-2">
               <svg
-                width="13.000000"
-                height="18.000000"
+                width="30"
+                height="30"
                 viewBox="0 0 13 18"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
