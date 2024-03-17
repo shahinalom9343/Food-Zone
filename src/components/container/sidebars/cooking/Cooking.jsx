@@ -1,9 +1,7 @@
-import React from "react";
-
 const Cooking = () => {
   return (
     <div>
-      <div className="bg-base-200 w-full flex justify-around items-center gap-2 w-full">
+      <div className="bg-base-200 flex justify-around items-center gap-2 w-full">
         <p>2</p>
         <p>sdafas</p>
         <p>asasa</p>

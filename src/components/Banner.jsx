@@ -1,6 +1,5 @@
-import PropTypes from "prop-types";
 import background from "../images/banner.png";
-const Banner = (props) => {
+const Banner = () => {
   return (
     <div className="lg:px-32 mx-auto mt-2 lg:mt-7 mb-3 lg:mb-10">
       <div
@@ -27,7 +26,7 @@ const Banner = (props) => {
               <button className=" bg-[#0BE58A] rounded-3xl text-xl font-medium px-6 py-3 text-black">
                 Explore Now
               </button>
-              <button className="text-white outline-2 border-2 border-white rounded-3xl text-xl font-medium px-6 py-3 text-black">
+              <button className="text-white outline-2 border-2 border-white rounded-3xl text-xl font-medium px-6 py-3">
                 Our feedback
               </button>
             </div>
@@ -37,7 +36,5 @@ const Banner = (props) => {
     </div>
   );
 };
-
-Banner.propTypes = {};
 
 export default Banner;

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 const PrepareToCook = ({
   singleCart,
   index,
@@ -13,7 +14,7 @@ const PrepareToCook = ({
         <p>{index + 1}</p>
       </div>
       <div>
-        <p>{singleCart.recipe_name.slice(0, 15)}</p>
+        <p>{singleCart.recipe_name}</p>
       </div>
       <div>
         <p>{singleCart.preparing_time} min</p>
@@ -36,5 +37,11 @@ const PrepareToCook = ({
     </div>
   );
 };
-
+PrepareToCook.propTypes = {
+  singleCart: PropTypes.object.isRequired,
+  index: PropTypes.number,
+  handleDelete: PropTypes.func,
+  handlePrepare: PropTypes.func,
+  handleCalories: PropTypes.func,
+};
 export default PrepareToCook;

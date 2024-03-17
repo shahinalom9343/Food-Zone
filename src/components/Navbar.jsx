@@ -1,6 +1,4 @@
-import PropTypes from "prop-types";
-
-const Navbar = (props) => {
+const Navbar = () => {
   return (
     <div className="px-1 lg:px-32 mx-auto mt-2 lg:mt-7">
       <div className="navbar bg-base-100">

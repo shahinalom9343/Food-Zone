@@ -1,5 +1,4 @@
-import React from "react";
-
+import PropTypes from "prop-types";
 const Card = ({ card, handleAddToCart }) => {
   const {
     recipe_image,
@@ -52,7 +51,6 @@ const Card = ({ card, handleAddToCart }) => {
                   strokeLinecap="round"
                 />
               </svg>
-
               <span>{preparing_time} minutes</span>
             </div>
             <div className="flex justify-center items-center gap-2">
@@ -90,5 +88,8 @@ const Card = ({ card, handleAddToCart }) => {
     </div>
   );
 };
-
+Card.propTypes = {
+  card: PropTypes.object.isRequired,
+  handleAddToCart: PropTypes.func,
+};
 export default Card;

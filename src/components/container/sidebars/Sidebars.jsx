@@ -16,7 +16,7 @@ const Sidebars = ({
         <h1 className="border-b-2 text-2xl font-semibold text-center">
           Want to cook: {carts.length}
         </h1>
-        <div className=" flex items-center gap-3 lg:gap-9 px-1 bg-fuchsia-100">
+        <div className=" flex items-center gap-3 lg:gap-9 px-1 bg-base-200">
           <div>
             <p></p>
           </div>
@@ -47,7 +47,7 @@ const Sidebars = ({
         <h1 className="border-b-2 text-2xl font-semibold text-center">
           Currently cooking: 0
         </h1>
-        <div className=" flex items-center gap-3 lg:gap-9 px-1 bg-fuchsia-100">
+        <div className=" flex items-center gap-3 lg:gap-9 px-1 bg-base-200">
           <div>
             <p></p>
           </div>
@@ -76,6 +76,13 @@ const Sidebars = ({
   );
 };
 
-Sidebars.propTypes = {};
+Sidebars.propTypes = {
+  carts: PropTypes.array,
+  handleDelete: PropTypes.func,
+  handlePrepare: PropTypes.func,
+  preparationTime: PropTypes.number,
+  handleCalories: PropTypes.func,
+  calories: PropTypes.number,
+};
 
 export default Sidebars;

@@ -22,6 +22,8 @@ const Cards = ({ handleAddToCart }) => {
   );
 };
 
-Cards.propTypes = {};
+Cards.propTypes = {
+  handleAddToCart: PropTypes.func,
+};
 
 export default Cards;
