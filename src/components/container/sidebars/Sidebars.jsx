@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import PrepareToCook from "./cooking/PrepareToCook";
-import Cooking from "./cooking/Cooking";
 const Sidebars = ({
   carts,
   handleDelete,
@@ -9,6 +8,7 @@ const Sidebars = ({
   handleCalories,
   calories,
 }) => {
+  // console.log(addToPrepare);
   return (
     <div className="py-6 border-2 border-[#28282833] rounded-xl">
       {/* upper sidebar */}
@@ -34,6 +34,7 @@ const Sidebars = ({
         <div className="flex justify-center items-center ">
           <div></div>
         </div>
+
         {carts.map((singleCart, index) => (
           <PrepareToCook
             key={singleCart.recipe_id}
@@ -62,7 +63,6 @@ const Sidebars = ({
           </div>
           <div></div>
         </div>
-        <Cooking></Cooking>
       </div>
       <div className="flex justify-end gap-6 mr-2">
         <p>

@@ -23,10 +23,10 @@ const Banner = () => {
               exploring....
             </p>
             <div className="flex gap-4">
-              <button className=" bg-[#0BE58A] rounded-3xl text-xl font-medium px-6 py-3 text-black">
+              <button className=" bg-[#0BE58A] rounded-3xl text-lg lg:text-xl font-medium px-3 lg:px-6 py-2 lg:py-3 text-black">
                 Explore Now
               </button>
-              <button className="text-white outline-2 border-2 border-white rounded-3xl text-xl font-medium px-6 py-3">
+              <button className="text-white outline-2 border-2 border-white rounded-3xl text-lg lg:text-xl font-medium px-3 lg:px-6 py-2 lg:py-3">
                 Our feedback
               </button>
             </div>

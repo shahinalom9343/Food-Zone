@@ -60,7 +60,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end space-x-2">
           {/* search input */}
-          <label className="input input-bordered sm:hidden md:flex lg:flex items-center gap-2 rounded-3xl bg-[#150B2B0D]">
+          <label className="input input-bordered hidden md:flex lg:flex items-center gap-2 rounded-3xl bg-[#150B2B0D]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"

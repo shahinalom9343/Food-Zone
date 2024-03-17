@@ -5,6 +5,7 @@ const PrepareToCook = ({
   handleDelete,
   handlePrepare,
   handleCalories,
+  handleAddToCooking,
 }) => {
   const { recipe_name, preparing_time, calories, recipe_id } = singleCart;
   // console.log(singleCart);
@@ -28,8 +29,9 @@ const PrepareToCook = ({
             handleDelete(recipe_id);
             handlePrepare(preparing_time);
             handleCalories(calories);
+            handleAddToCooking(recipe_id, singleCart);
           }}
-          className=" bg-[#0BE58A] rounded-3xl text-lg px-4 py-2 text-black my-5"
+          className=" bg-[#0BE58A] rounded-3xl text-lg lg:text-lg  px-2 lg:px-4 py-2 text-black my-5"
         >
           Preparing
         </button>
@@ -43,5 +45,6 @@ PrepareToCook.propTypes = {
   handleDelete: PropTypes.func,
   handlePrepare: PropTypes.func,
   handleCalories: PropTypes.func,
+  handleAddToCooking: PropTypes.func,
 };
 export default PrepareToCook;
